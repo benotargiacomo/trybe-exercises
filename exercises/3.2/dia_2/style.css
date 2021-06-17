@@ -1,0 +1,22 @@
+body {
+    font-size: 16px;
+}
+h1 {
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 65px;
+    color: orange;
+}
+p {
+    font-size: 3em;
+    font-weight: 600;
+}
+.bg_lista_p {
+    font-style: italic;
+    line-height: 100px;
+    background-color: gray;
+}
+#lista {
+    font-size: 40px;
+    text-decoration: underline;
+}

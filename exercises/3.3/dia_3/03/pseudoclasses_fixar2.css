@@ -1,0 +1,49 @@
+div:hover {
+  border: 2px solid red;
+}
+
+div:nth-of-type(1) {
+  background-color: red;
+}
+
+div:nth-of-type(2) {
+  background-color: green;
+}
+
+div:nth-of-type(3) {
+  background-color:maroon;
+  font-size: 20pt;
+  height: 50px;
+}
+
+div:nth-of-type(4) {
+  background-color: purple;
+}
+
+div:nth-of-type(5) {
+  background-color: blue;
+}
+
+div:nth-of-type(1) {
+  color: yellow;
+}
+
+div:nth-of-type(2) {
+  text-decoration: underline;
+}
+
+div:nth-of-type(3) {
+  color: white;
+}
+
+div:nth-of-type(4) {
+  font-weight: bold;
+}
+
+div:nth-of-type(5) {
+  font-size: 25pt;
+}
+
+div:nth-child(odd) h3 {
+  font-style: italic;
+}

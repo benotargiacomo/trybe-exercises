@@ -83,15 +83,15 @@ function fridayClick(){
   let fridayFilter = document.querySelectorAll('.friday');
   let fridayText = 'SEXTOU!';
 
-  // fridayClickButton.addEventListener('click', function() {
-  //   for (let i = 0; i < fridayFilter.length; i += 1) {
-  //     if (fridayFilter[i].innerHTML !== fridayText) {
-  //         fridayFilter[i].innerHTML = fridayText;
-  //     } else {
-  //         fridayFilter[i].innerHTML = ;
-  //       }
-  //     } 
-  //   })
+  fridayClickButton.addEventListener('click', function() {
+    for (let i = 0; i < fridayFilter.length; i += 1) {
+      if (fridayFilter[i].innerHTML !== fridayText) {
+          fridayFilter[i].innerHTML = fridayText;
+      } else {
+
+        }
+      } 
+    })
     // console.log("teste de click");
     // console.log(fridayFilter);
 }

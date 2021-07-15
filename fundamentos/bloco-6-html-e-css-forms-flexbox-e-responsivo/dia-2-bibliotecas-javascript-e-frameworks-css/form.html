@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Formulário</title>
+</head>
+<body>
+<form action="" method="GET">
+  <fieldset>
+    <label for="name-input">Nome </label>
+      <input type="text" name="nome" id="name-input" maxlength="40" required><br>
+    <label for="email-input">E-mail </label>
+      <input type="email" name="email" id="email-input" maxlength="50" required><br>
+    <label for="cpf-input">CPF </label>
+      <input type="text" name="cpf" id="cpf-input" maxlength="11" required><br>
+    <label for="endereco-input">Endereço </label>
+      <input type="text" name="endereco" id="endereco-input" maxlength="200" required><br>
+    <label for="cidade-input">Cidade </label>
+      <input type="text" name="cidade" id="cidade-input" maxlength="28" required><br>
+    <label for="estado-input">Estado </label>
+      <select name="estado" id="estado-input" required></select><br>
+    <label for="casa-id"> </label>
+      <input type="radio" name="imovel" id="casa-id" required><span>Casa</span>
+    <label for="apt-id"> </label>
+      <input type="radio" name="imovel" id="apt-id" required><span>Apartamento</span>
+  </fieldset>
+  <fieldset>
+    <label for="currilo-input"></label>
+      <textarea name="currilo" id="currilo-input" cols="30" rows="10" placeholder="Resumo do currículo..." required></textarea><br>
+    <label for="cargo-input">Cargo </label>
+      <input type="text" name="cargo" id="cargo-input" required><br>
+    <label for="data-input">Data de início </label>
+      <input type="date" name="data-inicio" id="cargo-input" required>
+  </fieldset>
+  <button type="submit">Enviar</button>
+  <button type="reset">Limpar</button>
+</form>
+<!-- SCRIPT -->
+<script src="scripts.js"></script>
+</body>
+</html>

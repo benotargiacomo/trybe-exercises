@@ -14,10 +14,6 @@ submitButton.addEventListener('click', (event) => {
   console.log('click');
 })
 
-// function getUserValue(event) {
-//   event.preventDefault();
-// }
-
 window.onload = function() {
   // document.getElementById('data-input').DatePickerX.init();
   new window.JustValidate('.js-form', {

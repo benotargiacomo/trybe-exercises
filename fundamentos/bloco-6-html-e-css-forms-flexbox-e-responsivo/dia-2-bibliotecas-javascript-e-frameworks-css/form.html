@@ -6,12 +6,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="node_modules/just-validate/dist/css/justValidateTooltip.min.css">
+  <style>
+    .form {
+      padding: 20px;
+      height: 750px;
+      width: 20%;
+      background-color: lightgray;
+      border-radius: 10px;
+    }
+    .textarea {
+      resize: none;
+    }
+  </style>
   <!-- <link rel="stylesheet" href="dist/css/DatePickerX.min.css"> -->
   <!-- <script src="dist/js/DatePickerX.min.js"></script> -->
   <title>Cadastro de currículo</title>
 </head>
 <body>
 <form action="" method="GET" class="js-form">
+  <div class="form">
   <fieldset>
     <label for="name-input">Nome </label>
       <input type="text" name="nome" id="name-input" maxlength="40" class="my-2" data-validate-field="nome" just-validate-tooltip-container required><br>
@@ -35,15 +48,19 @@
   </fieldset>
   <fieldset>
     <label for="currilo-input"></label>
-      <textarea name="currilo" id="currilo-input" cols="30" rows="10" placeholder="Resumo do currículo..." class="my-2" data-validate-field="curriculo" just-validate-tooltip-container required></textarea><br>
+      <textarea name="currilo" id="currilo-input" cols="30" rows="10" placeholder="Resumo do currículo..." class="my-2 textarea" data-validate-field="curriculo" just-validate-tooltip-container required></textarea><br>
     <label for="cargo-input">Cargo </label>
       <input type="text" name="cargo" id="cargo-input" class="my-2" data-validate-field="cargo" just-validate-tooltip-container required><br>
     <label for="data-input">Data de início </label>
       <input type="date" name="data-inicio" id="data-input" class="my-2" data-validate-field="data" just-validate-tooltip-container required>
   </fieldset>
-  <button type="submit" id="submit" class="btn btn-dark">Enviar</button>
-  <button type="reset" id="clear" class="btn btn-dark">Limpar</button>
+  <button type="submit" id="submit" class="mx-1 btn btn-dark">Enviar</button>
+  <button type="reset" id="clear" class="mx-1 btn btn-dark">Limpar</button>
 </form>
+</div>
+<div class="entrada">
+<!-- ENTRADA DO FORMULÁRIO -->
+</div>
 <!-- SCRIPT -->
 <script src="node_modules/just-validate/dist/js/just-validate.min.js"></script>
 <script src="scripts.js" type="module"></script>
